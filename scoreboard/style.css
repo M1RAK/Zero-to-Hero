@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-size: 56px;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 52px;
+	color: firebrick;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+main {
+	width: 760px;
+	height: fit-content;
+	border: 3px solid whitesmoke;
+	box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.4);
+	padding: 9px;
+	border-radius: 5px;
+	background-color: #222;
+	display: flex;
+	justify-content: space-around;
+}
+
+.home,
+.guest {
+	text-align: center;
+}
+
+.btn-container {
+	margin-top: 32px;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.reset-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+button {
+	padding: 9px;
+	background: transparent;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Mabry pro';
+	font-size: 17px;
+	outline: 2px solid rgb(85, 29, 85);
+	color: rgb(85, 29, 85);
+}
+
+button:hover {
+	outline: 4px solid rgb(85, 29, 85);
+}
+
+.highlight {
+	color: greenyellow;
+}
