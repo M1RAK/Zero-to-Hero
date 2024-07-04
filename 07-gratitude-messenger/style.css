@@ -1,0 +1,124 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+}
+
+main {
+	max-width: 400px;
+	padding: 20px 40px;
+	border-radius: 5px;
+	background-color: #020204;
+	color: white;
+}
+
+.header,
+.input-container,
+.output-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.freddie {
+	width: 120px;
+}
+
+h2,
+h3 {
+	font-family: 'Josefin Sans';
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 10px 0;
+	border: none;
+	outline: none;
+	border-radius: 9px;
+	background-color: #0e0d18;
+	font-family: 'Inter';
+	color: gray;
+	text-indent: 1rem;
+}
+
+.endorsment-addr {
+	margin: 1rem 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+input {
+	width: 180px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	background-color: #0e0d18;
+	font-family: 'Inter';
+	color: gray;
+	text-align: center;
+}
+
+button {
+	width: 100%;
+	height: 50px;
+	padding: 5px 0;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	background-color: #2065db;
+	font-family: 'Josefin Sans';
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: black;
+	text-align: center;
+}
+
+button:hover {
+	cursor: pointer;
+	transition: all 0.2s ease;
+	transform: scale(0.95);
+}
+
+#output-el {
+	width: 100%;
+	background-color: white;
+	color: black;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 1rem;
+	font-family: 'Inter';
+}
+
+#output-el p {
+	margin: 10px 0;
+}
+
+.output-bottom,
+.heart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.heart img {
+	margin-right: 1rem;
+	width: 24px;
+	height: 24px;
+}

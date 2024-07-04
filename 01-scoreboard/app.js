@@ -1,40 +1,30 @@
 let homeScore = document.getElementById('home-score')
 let guestScore = document.getElementById('guest-score')
 
-function addOne(team) {
+function updateScore(team, score) {
 	let home = Number(homeScore.textContent)
 	let guest = Number(guestScore.textContent)
 
-	if (team == 'H') {
-		homeScore.textContent = home + 1
+	if (team === 'H') {
+		homeScore.textContent = home + score
+	} else if (team === 'G') {
+		guestScore.textContent = guest + score
 	} else {
-		guestScore.textContent = guest + 1
+		console.error('Error Updating Score...')
 	}
+
 	highlightLeader()
+}
+function addOne(team) {
+	updateScore(team, 1)
 }
 
 function addTwo(team) {
-	let home = Number(homeScore.textContent)
-	let guest = Number(guestScore.textContent)
-
-	if (team == 'H') {
-		homeScore.textContent = home + 2
-	} else {
-		guestScore.textContent = guest + 2
-	}
-	highlightLeader()
+	updateScore(team, 2)
 }
 
 function addThree(team) {
-	let home = Number(homeScore.textContent)
-	let guest = Number(guestScore.textContent)
-
-	if (team == 'H') {
-		homeScore.textContent = home + 3
-	} else {
-		guestScore.textContent = guest + 3
-	}
-	highlightLeader()
+	updateScore(team, 3)
 }
 
 function highlightLeader() {
@@ -47,6 +37,9 @@ function highlightLeader() {
 	} else if (guest > home) {
 		guestScore.classList.add('highlight')
 		homeScore.classList.remove('highlight')
+	} else {
+		homeScore.classList.remove('highlight')
+		guestScore.classList.remove('highlight')
 	}
 }
 

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--clr-bg: #e0fae9;
+	--clr-btn: #247b3a;
+	--clr-output: #060910;
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 800;
+	margin-bottom: 8px;
+}
+
+.green {
+	font-weight: bold;
+	color: var(--clr-btn);
+}
+
+p {
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Karla', serif;
+	font-size: 18px;
+}
+
+main {
+	background-color: var(--clr-bg);
+	width: 600px;
+	padding: 24px;
+	border-radius: 9px;
+}
+
+.btn-wrapper {
+	margin: 36px 0;
+}
+
+button {
+	padding: 15px 20px;
+	color: white;
+	background-color: var(--clr-btn);
+	font-family: 'Karla', serif;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: #1da13e;
+	cursor: pointer;
+}
+
+.options {
+	margin: 16px 0;
+	width: 280px;
+}
+
+.length,
+.numbers,
+.symbols {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	font-size: 20px;
+	margin: 4px 0;
+}
+
+input {
+	border: none;
+	outline: none;
+	width: 50px;
+	height: 35px;
+	border-radius: 5px;
+	text-indent: 6px;
+	font-size: 24px;
+}
+
+.output-wrapper {
+	margin-top: 36px;
+	margin-bottom: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.output {
+	height: 40px;
+	width: 270px;
+	background-color: var(--clr-output);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #1da13e;
+}
+
+.output:hover {
+	cursor: pointer;
+}

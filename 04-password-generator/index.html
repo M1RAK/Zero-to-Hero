@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<main>
+			<h2>
+				Generate a <br />
+				<span class="green"> random password </span>
+			</h2>
+			<p>Never use an insecure password again.</p>
+
+			<div class="options">
+				<div class="length">
+					<span class="green">Password Length: </span>
+					<input type="number" min="6" max="16" maxlength="2" class="password-length" />
+				</div>
+				<div class="numbers">
+					<span class="green">Include Numbers: </span>
+					<input type="checkbox" class="password-numbers" />
+				</div>
+				<div class="symbols">
+					<span class="green">Include Symbols: </span>
+					<input type="checkbox" class="password-symbols" />
+				</div>
+			</div>
+
+			<div class="btn-wrapper">
+				<button class="generate-btn">Generate passwords</button>
+			</div>
+			<hr />
+
+			<div class="output-wrapper">
+				<div class="output one">{_Z1@n@HcOI9@/{</div>
+				<div class="output two">1`hZ2PjpoQTl||q</div>
+			</div>
+		</main>
+		<script src="./app.js"></script>
+	</body>
+</html>

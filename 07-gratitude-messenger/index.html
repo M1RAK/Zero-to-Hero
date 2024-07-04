@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<title>We are the Champions</title>
+	</head>
+	<body>
+		<main>
+			<div class="header">
+				<img class="freddie" src="./assets/freddie.png" alt="freddie" />
+				<h2>We are the Champions</h2>
+			</div>
+			<form class="input-container">
+				<textarea
+					id="endorsment-input"
+					placeholder="Write your endorsments here!"
+					required></textarea>
+				<div class="endorsment-addr">
+					<input
+						type="text"
+						id="input-from"
+						placeholder="From"
+						required />
+					<input
+						type="text"
+						id="output-to"
+						placeholder="To"
+						required />
+				</div>
+				<button id="publish-btn">Publish</button>
+			</form>
+			<div class="output-container">
+				<h3>- Endorsments -</h3>
+			</div>
+		</main>
+		<script src="firebase.js" type="module"></script>
+		<script src="app.js" type="module"></script>
+	</body>
+</html>

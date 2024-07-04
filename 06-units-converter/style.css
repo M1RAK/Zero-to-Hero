@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--blue: #1e0ef2;
+	--gray: #e5e8e2;
+	--light-gray: #fdfffa;
+	--text: #26243f;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main {
+	height: fit-content;
+	width: 500px;
+	background-color: var(--gray);
+	border: 3px solid var(--light-gray);
+	border-radius: 5px;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3{
+	margin-bottom: 1rem;
+}
+
+.header {
+	border-radius: 5px 5px 0 0;
+	background-color: var(--blue);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	color: var(--light-gray);
+	margin-bottom: 2.5rem;
+}
+
+.input-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#input-el {
+	height: 90px;
+	width: 110px;
+	background-color: transparent;
+	border: 1px solid var(--light-gray);
+	border-radius: 5px;
+	outline: none;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	font-weight: bolder;
+	color: var(--light-gray);
+}
+
+button {
+	padding: 10px 30px;
+	background-color: var(--light-gray);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	border: 2px solid transparent;
+}
+
+button:hover {
+	cursor: pointer;
+	color: var(--light-gray);
+	background-color: transparent;
+	border: 2px solid var(--gray);
+}
+
+.output {
+	margin: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.output > div {
+	width: 100%;
+	background-color: var(--light-gray);
+	color: var(--text);
+	padding: 1rem 2rem;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.divider {
+	display: inline-block;
+	height: 1.2rem;
+	background-color: var(--text);
+	color: var(--text);
+	width: 2px;
+	margin: 0 6px;
+	margin-bottom: -2px;
+}
